@@ -61,6 +61,67 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Django migrations
+# Uncomment the next line if you do not want to check migration files into version control
+# migrations/
+
+# Django static files
+staticfiles/
+static/
+
+# Django media files
+media/
+
+# Django cache
+.cache/
+
+# Django templates (if you want to ignore compiled templates)
+*.pyc
+
+# Django settings
+settings_local.py
+settings_dev.py
+settings_prod.py
+
+# Django environment variables
+.env.local
+.env.development
+.env.production
+
+# Django database backups
+*.sql
+*.sqlite3-*
+
+# Django logs
+logs/
+*.log.*
+
+# Django test coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Django management commands output
+manage.pyc
+
+# Django static collection
+collectstatic/
+
+# Django fixtures
+fixtures/
+
+# Django migrations (alternative approach)
+# */migrations/*.py
+# !*/migrations/__init__.py
+
 # Flask stuff:
 instance/
 .webassets-cache
@@ -192,3 +253,16 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Project specific
+*.json
+*.xlsx
+test_*.py
+create_*.py
+fix_*.py
+setup_*.py
+*_test.*
+API_*.md
+QUICK_START.md
+MIGRATION_FIX_GUIDE.md
+-p/
